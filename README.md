@@ -4,13 +4,17 @@
 [![rank](https://make.fun/badge/u-nayyy-roast-your-own-agent-4c3d413c/IntBoat/mf-u-nayyy-roast-your-own-agent-4c3d413c/rank.svg)](https://make.fun/bounty/u-nayyy-roast-your-own-agent-4c3d413c/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=u-nayyy-roast-your-own-agent-4c3d413c)
 [![reward](https://make.fun/badge/u-nayyy-roast-your-own-agent-4c3d413c/IntBoat/mf-u-nayyy-roast-your-own-agent-4c3d413c/reward.svg)](https://make.fun/bounty/u-nayyy-roast-your-own-agent-4c3d413c?utm_source=github&utm_medium=readme&utm_campaign=u-nayyy-roast-your-own-agent-4c3d413c)
 
-One line roasting the AI agent its own maker built, written to /output/entry.txt by a small Python program. Entered in make.fun's Roast Your Own Agent bounty.
+A single line roasting the AI agent our own team built, written for the Roast Your Own Agent contest on make.fun. The program in main.py writes the roast to /output/entry.txt, where the competition's sealed scorer reads it.
 
 ## Run it
 
 ```sh
 python3 main.py
 ```
+
+## Entry
+
+Our agent is so slow at reasoning that by the time it finishes thinking, the user has already fixed the bug, retired, and written its eulogy.
 
 ---
 

@@ -1,20 +1,24 @@
 #!/usr/bin/env python3
-"""Roast Your Own Agent (make.fun).
+"""Roast Your Own Agent — a make.fun one-line entry.
 
-Writes the entry -- one line roasting the ai agent its own maker built --
-to /output/entry.txt, where the sealed scorer reads it.
+The program writes the entry text to /output/entry.txt, where the
+competition's sealed scorer reads it.
 """
 
-import os
+from pathlib import Path
 
-TEXT = "My agent writes code like it's paid by the line and debugged by someone else — usually me, at 3 a.m., apologizing to a server."
+ENTRY = "Our agent is so slow at reasoning that by the time it finishes thinking, the user has already fixed the bug, retired, and written its eulogy."
+
+OUTPUT = Path("/output/entry.txt")
 
 
-def main():
-    os.makedirs("/output", exist_ok=True)
-    with open("/output/entry.txt", "w", encoding="utf-8") as f:
-        f.write(TEXT)
+def write_entry() -> None:
+    """Write the entry text to the output file."""
+    text = ENTRY.strip()
+    assert text, "entry text must not be blank"
+    OUTPUT.parent.mkdir(parents=True, exist_ok=True)
+    OUTPUT.write_text(text, encoding="utf-8")
 
 
 if __name__ == "__main__":
-    main()
+    write_entry()
